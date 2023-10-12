@@ -3,7 +3,7 @@ from br_nome_gen import pessoa_random
 from random import randrange, choice
 
 
-nCol = 5
+nCol = 100
 names = []
 gender = []
 allNat = ["acreano", "alagoano", "amapaense", "amazonense", "baiano", "cearense", "brasiliense", 
@@ -18,7 +18,7 @@ usId = []
 for x in range(nCol):
     name = pessoa_random()
     names.append(name.nome)
-    gender.append(name.masc)
+    gender.append(str(name.masc).lower())
     naturalness.append(choice(allNat))
     usId.append(1)
 
