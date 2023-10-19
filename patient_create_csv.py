@@ -3,7 +3,7 @@ from br_nome_gen import pessoa_random
 from random import randrange, choice
 
 
-nCol = 100
+nCol = 100000
 names = []
 gender = []
 allNat = ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MS", "MT", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"]
@@ -20,14 +20,14 @@ for x in range(nCol):
     usId.append(1)
 
 for x in range(nCol):
-    randBDate = randrange(start=10000000, stop=99999999999999999)
-    randNum = randrange(start=10, stop=99999999999999999)
+    randBDate = randrange(start=10000000, stop=999999999999)
+    randNum = randrange(start=10, stop=99999999999999)
     if randBDate not in bDate or randNum not in record:
         bDate.append(randBDate)
         record.append(randNum)
     else:
-        randBDate = randrange(start=50000000, stop=999999999999)
-        randNum = randrange(start=10, stop=99999999999999999)
+        randBDate = randrange(start=10000, stop=99999999)
+        randNum = randrange(start=10, stop=999999999999)
         bDate.append(randBDate)
         record.append(randNum)
 
