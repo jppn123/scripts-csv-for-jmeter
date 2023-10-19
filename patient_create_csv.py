@@ -6,10 +6,7 @@ from random import randrange, choice
 nCol = 100
 names = []
 gender = []
-allNat = ["acreano", "alagoano", "amapaense", "amazonense", "baiano", "cearense", "brasiliense", 
-               "espírito-santense", "goiano", "maranhense", "mato-grossense", "sul-mato-grossense", "mineiro", 
-               "paraense", "paraibano", "paranaense", "pernambucano", "piauiense", "fluminense", "norte-rio-grandense", 
-               "gaúcho", "rondoniano", "roraimense", "catarinense", "paulista", "sergipano", "tocantinense"]
+allNat = ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MS", "MT", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"]
 naturalness = []
 bDate = []
 record = []
